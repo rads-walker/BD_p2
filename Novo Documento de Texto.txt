@@ -1,0 +1,10 @@
+/*select count(*) from cliente 
+join pedido on pedido.codigocliente = cliente.codigo
+join vendedor on pedido.codigovendedor = vendedor.codigo
+where vendedor.primeiro = 'Michael' and vendedor.sobrenome = 'Blythe'
+
+SELECT  TRANSPORTADORA.CODIGO, TRANSPORTADORA.NOME, COUNT  (*) AS "QUANTIDADE PEDIDOS" FROM TRANSPORTADORA, PEDIDO 
+WHERE PEDIDO.CODIGOTRANSPORTADORA = TRANSPORTADORA.CODIGO
+GROUP BY TRANSPORTADORA.CODIGO, TRANSPORTADORA.NOME
+ORDER BY TRANSPORTADORA.CODIGO;
+*9*/
